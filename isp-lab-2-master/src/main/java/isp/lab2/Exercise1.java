@@ -14,12 +14,13 @@ public class Exercise1 {
     private static int[] getUserNumbers() {
         int n = (int) ((Math.random() * (10 - 2)) + 2);
         int[] intArray = new int[n];
-        Scanner scan= new Scanner(System.in);
-        System.out.println("Te rog sa dai n numere: ");
+        System.out.println("Va rog dati " + n + " numere:");
+        Scanner console = new Scanner(System.in);
         for (int i=0;i<n;i++){
-            int num= scan.nextInt();
-            intArray[i] = num;
+            int nr = console.nextInt();
+            intArray[i] = nr;
         }
+        
         return intArray;
     }
 
@@ -30,10 +31,10 @@ public class Exercise1 {
      * @return the arithmetical mean of the given numbers
      */
     protected static double computeTheArithmeticalMean(int[] userNumbers) {
-        double media = 0;
+        double sum =0;
         for (int i=0;i<userNumbers.length;i++)
-            media = media + userNumbers[i];
-        return media / userNumbers.length;
+            sum = sum + userNumbers[i];
+        return sum / userNumbers.length;
     }
 
     public static void main(String[] args) {
