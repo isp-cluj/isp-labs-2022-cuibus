@@ -130,8 +130,8 @@ class ATM{
     }
 
     public void insertCard(Card c, String pin){
-        if(card == null){
-            if(c.getPin().equals(pin)){
+        if(card!=null){
+            if(c.getCardId().equals(pin)){
                 System.out.println("Card accepted.");
                 card = c;
             }else{

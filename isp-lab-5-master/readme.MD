@@ -24,7 +24,7 @@ Given the UML class diagram above, implement the corresponding Java program.
 
 Create an UML Use-Case diagram describing an ATM system. Save jpg use case diagram in /docs subfolder and display it in this readme file bellow.
 
-![Exercise 2 usecase image](docs/usecase_ex1.png)
+![Exercise 2 usecase image](docs/usecase_ex2.png)
 
 ## Exercise 3
 
